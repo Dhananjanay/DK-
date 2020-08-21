@@ -138,70 +138,7 @@ public class IXIGO_HomePage extends BaseClass {
 
 	}
 
-	/*
-	 * public boolean DatePicker(Date DepartureDate, Date ArrivateDate) {
-	 * 
-	 * 
-	 * if (DepartureDate.compareTo(ArrivateDate) > 0 ||
-	 * daysBetween(DepartureDate, ArrivateDate) > 7) { throw new SkipException(
-	 * "This Method is restericated to accept 7 days difference between departure and Arrival date. Please check Given Date again. !!Contact Git Admin for more info"
-	 * );
-	 * 
-	 * }
-	 * 
-	 * boolean StatusFlag = false;
-	 * 
-	 * SimpleDateFormat formatNowDay = new SimpleDateFormat("dd");
-	 * SimpleDateFormat formatNowMonth = new SimpleDateFormat("MMMM");
-	 * SimpleDateFormat formatNowYear = new SimpleDateFormat("YYYY");
-	 * 
-	 * // Clicking on DepartureDate String Day1 =
-	 * formatNowDay.format(DepartureDate); String Month1 =
-	 * formatNowMonth.format(DepartureDate); String Year1 =
-	 * formatNowYear.format(DepartureDate); if (Day1.startsWith("0")) { Day1 =
-	 * Day1.substring(1); } try { String DepartureDateXpath =
-	 * "//*[@class='DayPicker-Months']/div[*]/div/div[text()='" + Month1 +
-	 * "']/span[text()='" + Year1 +
-	 * "']//../../following-sibling::div[@class='DayPicker-Body']" +
-	 * "/div/div/div/p[text()='" + Day1 + "']/../..";
-	 * 
-	 * 
-	 * Cal.click();
-	 * 
-	 * Reporter.log("Clicking on date " + Day1+"/"+Month1+"/"+Year1); WebElement
-	 * DepDate = driver.findElement(By.xpath(DepartureDateXpath)); if
-	 * (DepDate.isDisplayed()) { IXIGO_Util.JavaScriptClick(DepDate); }
-	 * 
-	 * // Clicking on ArrivalDate String Day2 =
-	 * formatNowDay.format(ArrivateDate); String Month2 =
-	 * formatNowMonth.format(ArrivateDate); String Year2 =
-	 * formatNowYear.format(ArrivateDate);
-	 * 
-	 * if (Day2.startsWith("0")) { Day2 = Day2.substring(1); }
-	 * 
-	 * String ArrivalDateXpath =
-	 * "//*[@class='DayPicker-Months']/div[*]/div/div[text()='" + Month2 +
-	 * "']/span[text()='" + Year2 +
-	 * "']//../../following-sibling::div[@class='DayPicker-Body']" +
-	 * "/div/div/div/p[text()='" + Day2 + "']/../..";
-	 * 
-	 * 
-	 * 
-	 * Reporter.log("Clicking on date " + Day2+"/"+Month2+"/"+Year2); WebElement
-	 * ArrivalDate = driver.findElement(By.xpath(ArrivalDateXpath));
-	 * 
-	 * if (ArrivalDate.isDisplayed()) { IXIGO_Util.JavaScriptClick(ArrivalDate);
-	 * } StatusFlag = true;
-	 * 
-	 * } catch (Exception e) { Reporter.log(e.getMessage());
-	 * e.printStackTrace();
-	 * 
-	 * }
-	 * 
-	 * return StatusFlag;
-	 * 
-	 * }
-	 */
+	
 
 	// Method to fetch and enter departure date for Search
 
@@ -322,7 +259,6 @@ public class IXIGO_HomePage extends BaseClass {
 
 	public IXIGO_FlightResult ClickSearchButton() {
 		search.click();
-		String resultPageTitle = driver.getTitle();
 		Reporter.log("Clicked on Search button after entering all details");
 		return new IXIGO_FlightResult();
 
