@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+    <line>
+      <![CDATA[Chrome Opened]]>
+    </line>
+    <line>
+      <![CDATA[https://www.ixigo.com/ Opened]]>
+    </line>
+    <line>
+      <![CDATA[Getting Page title...]]>
+    </line>
+    <line>
+      <![CDATA[Enter Depature City Pune, India]]>
+    </line>
+    <line>
+      <![CDATA[waiting to populate Auto Suggestion after entering City..]]>
+    </line>
+    <line>
+      <![CDATA[selected city...]]>
+    </line>
+    <line>
+      <![CDATA[Enter Arrival City Hyderabad, India]]>
+    </line>
+    <line>
+      <![CDATA[waiting to populate Auto Suggestion after entering City..]]>
+    </line>
+    <line>
+      <![CDATA[selected city...]]>
+    </line>
+    <line>
+      <![CDATA[Fetched cuurent displayed depart month and year...]]>
+    </line>
+    <line>
+      <![CDATA[Fetched depart month...]]>
+    </line>
+    <line>
+      <![CDATA[Fetched depart month...]]>
+    </line>
+    <line>
+      <![CDATA[selected depart date...]]>
+    </line>
+    <line>
+      <![CDATA[Fetched cuurent displayed return month and year...]]>
+    </line>
+    <line>
+      <![CDATA[Fetched return month...]]>
+    </line>
+    <line>
+      <![CDATA[selected return date...]]>
+    </line>
+    <line>
+      <![CDATA[selected traveller detail...]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Search button after entering all details]]>
+    </line>
+    <line>
+      <![CDATA[*********** No of stop options***************]]>
+    </line>
+    <line>
+      <![CDATA[*********** correct stops options displayed***************]]>
+    </line>
+    <line>
+      <![CDATA[*********** No of departure options***************]]>
+    </line>
+    <line>
+      <![CDATA[*********** correct departure options displayed***************]]>
+    </line>
+    <line>
+      <![CDATA[*********** No ofAirlines options***************]]>
+    </line>
+    <line>
+      <![CDATA[*********** correct Airlines options displayed***************]]>
+    </line>
+    <line>
+      <![CDATA[Flight details are : Flight name- IndiGo  6E122     Departure time- 00:10       Flight price-3160]]>
+    </line>
+    <line>
+      <![CDATA[Flight details are : Flight name- IndiGo  6E587     Departure time- 16:15       Flight price-3160]]>
+    </line>
+    <line>
+      <![CDATA[Flight details are : Flight name- IndiGo  6E242     Departure time- 04:20       Flight price-3174]]>
+    </line>
+    <line>
+      <![CDATA[Flight details are : Flight name- Air India  AI9888     Departure time- 20:00       Flight price-3973]]>
+    </line>
+    <line>
+      <![CDATA[Flight details are : Flight name- SpiceJet  SG2760     Departure time- 22:35       Flight price-3772]]>
+    </line>
+    <line>
+      <![CDATA[Flight details are : Flight name- IndiGo  6E241     Departure time- 02:30       Flight price-3774]]>
+    </line>
+    <line>
+      <![CDATA[Flight details are : Flight name- IndiGo  6E118     Departure time- 22:15       Flight price-3774]]>
+    </line>
+    <line>
+      <![CDATA[*********** correct Airlines options displayed***************]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="41961" started-at="2020-08-21T17:57:53Z" finished-at="2020-08-21T17:58:35Z">
+    <groups>
+    </groups>
+    <test name="IXIGO_WEBAUTOMATION" duration-ms="41961" started-at="2020-08-21T17:57:53Z" finished-at="2020-08-21T17:58:35Z">
+      <class name="com.ixigo.TestCases.IXIGO_FlightResultTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.ixigo.TestCases.IXIGO_FlightResultTest@e320068]" name="init" is-config="true" duration-ms="115" started-at="2020-08-21T23:28:19Z" finished-at="2020-08-21T23:28:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Search button after entering all details]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="ValidateNumberOfStopOptions()[pri:1, instance:com.ixigo.TestCases.IXIGO_FlightResultTest@e320068]" name="ValidateNumberOfStopOptions" duration-ms="12339" started-at="2020-08-21T23:28:19Z" depends-on-methods="com.ixigo.TestCases.IXIGO_HomePageTests.SearchFlight" finished-at="2020-08-21T23:28:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[*********** No of stop options***************]]>
+            </line>
+            <line>
+              <![CDATA[*********** correct stops options displayed***************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateNumberOfStopOptions -->
+        <test-method status="PASS" signature="ValidateResultPage()[pri:2, instance:com.ixigo.TestCases.IXIGO_FlightResultTest@e320068]" name="ValidateResultPage" duration-ms="8" started-at="2020-08-21T23:28:31Z" finished-at="2020-08-21T23:28:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateResultPage -->
+        <test-method status="PASS" signature="ValidateNumberOfDepartureOptions()[pri:3, instance:com.ixigo.TestCases.IXIGO_FlightResultTest@e320068]" name="ValidateNumberOfDepartureOptions" duration-ms="108" started-at="2020-08-21T23:28:31Z" depends-on-methods="com.ixigo.TestCases.IXIGO_HomePageTests.SearchFlight" finished-at="2020-08-21T23:28:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[*********** No of departure options***************]]>
+            </line>
+            <line>
+              <![CDATA[*********** correct departure options displayed***************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateNumberOfDepartureOptions -->
+        <test-method status="PASS" signature="ValidateNumberOfAirlinesOptions()[pri:4, instance:com.ixigo.TestCases.IXIGO_FlightResultTest@e320068]" name="ValidateNumberOfAirlinesOptions" duration-ms="151" started-at="2020-08-21T23:28:31Z" depends-on-methods="com.ixigo.TestCases.IXIGO_HomePageTests.SearchFlight" finished-at="2020-08-21T23:28:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[*********** No ofAirlines options***************]]>
+            </line>
+            <line>
+              <![CDATA[*********** correct Airlines options displayed***************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateNumberOfAirlinesOptions -->
+        <test-method status="PASS" signature="ValidateAirlinesdetails()[pri:5, instance:com.ixigo.TestCases.IXIGO_FlightResultTest@e320068]" name="ValidateAirlinesdetails" duration-ms="2488" started-at="2020-08-21T23:28:31Z" depends-on-methods="com.ixigo.TestCases.IXIGO_HomePageTests.SearchFlight" finished-at="2020-08-21T23:28:34Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Flight details are : Flight name- IndiGo  6E122     Departure time- 00:10       Flight price-3160]]>
+            </line>
+            <line>
+              <![CDATA[Flight details are : Flight name- IndiGo  6E587     Departure time- 16:15       Flight price-3160]]>
+            </line>
+            <line>
+              <![CDATA[Flight details are : Flight name- IndiGo  6E242     Departure time- 04:20       Flight price-3174]]>
+            </line>
+            <line>
+              <![CDATA[Flight details are : Flight name- Air India  AI9888     Departure time- 20:00       Flight price-3973]]>
+            </line>
+            <line>
+              <![CDATA[Flight details are : Flight name- SpiceJet  SG2760     Departure time- 22:35       Flight price-3772]]>
+            </line>
+            <line>
+              <![CDATA[Flight details are : Flight name- IndiGo  6E241     Departure time- 02:30       Flight price-3774]]>
+            </line>
+            <line>
+              <![CDATA[Flight details are : Flight name- IndiGo  6E118     Departure time- 22:15       Flight price-3774]]>
+            </line>
+            <line>
+              <![CDATA[*********** correct Airlines options displayed***************]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateAirlinesdetails -->
+      </class> <!-- com.ixigo.TestCases.IXIGO_FlightResultTest -->
+      <class name="com.ixigo.TestCases.IXIGO_HomePageTests">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.ixigo.TestCases.IXIGO_HomePageTests@536aaa8d]" name="Setup" is-config="true" duration-ms="19172" started-at="2020-08-21T23:27:53Z" finished-at="2020-08-21T23:28:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome Opened]]>
+            </line>
+            <line>
+              <![CDATA[https://www.ixigo.com/ Opened]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.ixigo.TestCases.IXIGO_HomePageTests@536aaa8d]" name="init" is-config="true" duration-ms="95" started-at="2020-08-21T23:28:12Z" finished-at="2020-08-21T23:28:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="ValidateHomePage()[pri:1, instance:com.ixigo.TestCases.IXIGO_HomePageTests@536aaa8d]" name="ValidateHomePage" duration-ms="30" started-at="2020-08-21T23:28:12Z" finished-at="2020-08-21T23:28:12Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Getting Page title...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateHomePage -->
+        <test-method status="PASS" signature="SearchFlight()[pri:2, instance:com.ixigo.TestCases.IXIGO_HomePageTests@536aaa8d]" name="SearchFlight" duration-ms="6500" started-at="2020-08-21T23:28:12Z" finished-at="2020-08-21T23:28:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Enter Depature City Pune, India]]>
+            </line>
+            <line>
+              <![CDATA[waiting to populate Auto Suggestion after entering City..]]>
+            </line>
+            <line>
+              <![CDATA[selected city...]]>
+            </line>
+            <line>
+              <![CDATA[Enter Arrival City Hyderabad, India]]>
+            </line>
+            <line>
+              <![CDATA[waiting to populate Auto Suggestion after entering City..]]>
+            </line>
+            <line>
+              <![CDATA[selected city...]]>
+            </line>
+            <line>
+              <![CDATA[Fetched cuurent displayed depart month and year...]]>
+            </line>
+            <line>
+              <![CDATA[Fetched depart month...]]>
+            </line>
+            <line>
+              <![CDATA[Fetched depart month...]]>
+            </line>
+            <line>
+              <![CDATA[selected depart date...]]>
+            </line>
+            <line>
+              <![CDATA[Fetched cuurent displayed return month and year...]]>
+            </line>
+            <line>
+              <![CDATA[Fetched return month...]]>
+            </line>
+            <line>
+              <![CDATA[selected return date...]]>
+            </line>
+            <line>
+              <![CDATA[selected traveller detail...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SearchFlight -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.ixigo.TestCases.IXIGO_HomePageTests@536aaa8d]" name="TearDown" is-config="true" duration-ms="907" started-at="2020-08-21T23:28:34Z" finished-at="2020-08-21T23:28:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.ixigo.TestCases.IXIGO_HomePageTests -->
+    </test> <!-- IXIGO_WEBAUTOMATION -->
+  </suite> <!-- Suite -->
+</testng-results>

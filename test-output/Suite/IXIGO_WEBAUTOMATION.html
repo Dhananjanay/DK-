@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>TestNG:  IXIGO_WEBAUTOMATION</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>IXIGO_WEBAUTOMATION</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 21 23:27:53 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>41 seconds (41961 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ixigo.TestCases.IXIGO_HomePageTests.SearchFlight()'><b>SearchFlight</b><br>Test class: com.ixigo.TestCases.IXIGO_HomePageTests<br/>
+<a href="#Output-2003147568" onClick='toggleBox("Output-2003147568", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2003147568" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2003147568">
+Enter Depature City Pune, India<br/>
+waiting to populate Auto Suggestion after entering City..<br/>
+selected city...<br/>
+Enter Arrival City Hyderabad, India<br/>
+waiting to populate Auto Suggestion after entering City..<br/>
+selected city...<br/>
+Fetched cuurent displayed depart month and year...<br/>
+Fetched depart month...<br/>
+Fetched depart month...<br/>
+selected depart date...<br/>
+Fetched cuurent displayed return month and year...<br/>
+Fetched return month...<br/>
+selected return date...<br/>
+selected traveller detail...<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.ixigo.TestCases.IXIGO_HomePageTests@536aaa8d</td></tr>
+<tr>
+<td title='com.ixigo.TestCases.IXIGO_FlightResultTest.ValidateAirlinesdetails()'><b>ValidateAirlinesdetails</b><br>Test class: com.ixigo.TestCases.IXIGO_FlightResultTest<br/>
+<a href="#Output-1259639178" onClick='toggleBox("Output-1259639178", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1259639178" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1259639178">
+Flight details are : Flight name- IndiGo  6E122     Departure time- 00:10       Flight price-3160<br/>
+Flight details are : Flight name- IndiGo  6E587     Departure time- 16:15       Flight price-3160<br/>
+Flight details are : Flight name- IndiGo  6E242     Departure time- 04:20       Flight price-3174<br/>
+Flight details are : Flight name- Air India  AI9888     Departure time- 20:00       Flight price-3973<br/>
+Flight details are : Flight name- SpiceJet  SG2760     Departure time- 22:35       Flight price-3772<br/>
+Flight details are : Flight name- IndiGo  6E241     Departure time- 02:30       Flight price-3774<br/>
+Flight details are : Flight name- IndiGo  6E118     Departure time- 22:15       Flight price-3774<br/>
+*********** correct Airlines options displayed***************<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.ixigo.TestCases.IXIGO_FlightResultTest@e320068</td></tr>
+<tr>
+<td title='com.ixigo.TestCases.IXIGO_HomePageTests.ValidateHomePage()'><b>ValidateHomePage</b><br>Test class: com.ixigo.TestCases.IXIGO_HomePageTests<br/>
+<a href="#Output-1342346098" onClick='toggleBox("Output-1342346098", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1342346098" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1342346098">
+Getting Page title...<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.ixigo.TestCases.IXIGO_HomePageTests@536aaa8d</td></tr>
+<tr>
+<td title='com.ixigo.TestCases.IXIGO_FlightResultTest.ValidateNumberOfAirlinesOptions()'><b>ValidateNumberOfAirlinesOptions</b><br>Test class: com.ixigo.TestCases.IXIGO_FlightResultTest<br/>
+<a href="#Output-1027495011" onClick='toggleBox("Output-1027495011", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1027495011" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1027495011">
+*********** No ofAirlines options***************<br/>
+*********** correct Airlines options displayed***************<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.ixigo.TestCases.IXIGO_FlightResultTest@e320068</td></tr>
+<tr>
+<td title='com.ixigo.TestCases.IXIGO_FlightResultTest.ValidateNumberOfDepartureOptions()'><b>ValidateNumberOfDepartureOptions</b><br>Test class: com.ixigo.TestCases.IXIGO_FlightResultTest<br/>
+<a href="#Output-124734309" onClick='toggleBox("Output-124734309", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-124734309" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-124734309">
+*********** No of departure options***************<br/>
+*********** correct departure options displayed***************<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.ixigo.TestCases.IXIGO_FlightResultTest@e320068</td></tr>
+<tr>
+<td title='com.ixigo.TestCases.IXIGO_FlightResultTest.ValidateNumberOfStopOptions()'><b>ValidateNumberOfStopOptions</b><br>Test class: com.ixigo.TestCases.IXIGO_FlightResultTest<br/>
+<a href="#Output-1545827753" onClick='toggleBox("Output-1545827753", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1545827753" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1545827753">
+*********** No of stop options***************<br/>
+*********** correct stops options displayed***************<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.ixigo.TestCases.IXIGO_FlightResultTest@e320068</td></tr>
+<tr>
+<td title='com.ixigo.TestCases.IXIGO_FlightResultTest.ValidateResultPage()'><b>ValidateResultPage</b><br>Test class: com.ixigo.TestCases.IXIGO_FlightResultTest</td>
+<td></td>
+<td>0</td>
+<td>com.ixigo.TestCases.IXIGO_FlightResultTest@e320068</td></tr>
+</table><p>
+</body>
+</html>
