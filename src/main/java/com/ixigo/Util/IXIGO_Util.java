@@ -1,8 +1,21 @@
 package com.ixigo.Util;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DateUtil;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.util.NumberToTextConverter;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -80,5 +93,82 @@ public class IXIGO_Util extends BaseClass {
 
 		return Path;
 	}
-
+	
+	
+	public static List<Map<String, String>> getMapTestData(){
+		List<Map<String,String>> testDataAllRows=null;
+		
+		Map<String,String> testdata =null;
+		try{
+			FileInputStream inputstream = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/com/ixigo/testdata/Ixigo_Testdata.xlsx");
+			
+			Workbook workbook= new XSSFWorkbook(inputstream);
+			Sheet sheet =workbook.getSheetAt(0);
+			int lastRownum = sheet.getLastRowNum();
+			
+			int lastcolnumber=sheet.getRow(0).getLastCellNum();
+			List<String> list = new ArrayList<String>();
+			for(int i=0; i<lastcolnumber;i++){
+				Row row=sheet.getRow(0);
+				Cell cell=row.getCell(i);
+				String rowheader=cell.getStringCellValue().trim();
+				list.add(rowheader);
+			}
+			
+			testDataAllRows=new ArrayList<Map<String,String>>();	
+			for(int j=1; j<=lastRownum;j++){
+				Row row = sheet.getRow(j);
+				testdata=new TreeMap<String,String>(String.CASE_INSENSITIVE_ORDER);
+				for(int k=0;k<lastcolnumber;k++){
+					Cell cell =row.getCell(k);	
+						if(cell==null){
+							break;
+						}
+					switch (cell.getCellType()) {
+		                
+		                case Cell.CELL_TYPE_STRING:
+		                    System.out.println(cell.getRichStringCellValue().getString());
+		                    String colvalue=cell.getStringCellValue().trim();
+							testdata.put((String) list.get(k), colvalue);
+		                    break;
+		                    
+		                case Cell.CELL_TYPE_NUMERIC:
+		                    if (DateUtil.isCellDateFormatted(cell)) {
+		                        System.out.println(cell.getDateCellValue());
+		                    } else {
+		                        System.out.println(cell.getNumericCellValue());
+		                        String colvaluenumeric=NumberToTextConverter.toText(cell.getNumericCellValue());
+		    					testdata.put((String) list.get(k), colvaluenumeric);
+		                    }
+		                    break;
+		                    
+		                case Cell.CELL_TYPE_BOOLEAN:
+		                    System.out.println(cell.getBooleanCellValue());
+		                    break;
+		                    
+		                case Cell.CELL_TYPE_FORMULA:
+		                    System.out.println(cell.getCellFormula());
+		                    break;
+		                    
+		                default:
+		                    System.out.println();
+		            }
+					
+					
+					
+					//String colvalue=cell.getStringCellValue().trim();
+					//testdata.put((String) list.get(k), colvalue);	
+				}
+				
+				testDataAllRows.add(testdata);
+			}						
+		}
+		catch(Exception e){
+		  e.printStackTrace();	
+		}
+		
+		return testDataAllRows;
+		
+	}
+		
 }

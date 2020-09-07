@@ -62,8 +62,9 @@ public class IXIGO_FlightResult extends BaseClass {
 	public static List<String> AirlinesOptions() {
 		List<String> airlines_optionResult = new ArrayList<String>();
 		for (WebElement airline : Airlinesoptions) {
-			airlines_optionResult.add(airline.getAttribute("textContent"));
+			airlines_optionResult.add(airline.getAttribute("textContent"));	
 		}
+		System.out.println("Airlines dispalyed are: " +airlines_optionResult);
 		return airlines_optionResult;
 	}
 

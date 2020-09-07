@@ -2,6 +2,8 @@ package com.ixigo.TestCases;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -22,6 +24,7 @@ public class IXIGO_FlightResultTest extends BaseClass {
 
 	private IXIGO_HomePage home;
 	private IXIGO_FlightResult results;
+	List<Map<String,String>> testdataInMap=IXIGO_Util.getMapTestData();
 
 	@BeforeClass
 	public void init() {
@@ -35,8 +38,8 @@ public class IXIGO_FlightResultTest extends BaseClass {
 
 		Reporter.log("*********** No of stop options***************");
 		ArrayList<String> Expected_Stopoptions = new ArrayList<String>(
-				Arrays.asList(Config.getProperty("First_Stopoption"), Config.getProperty("Second_Stopoption"),
-						Config.getProperty("Third_Stopoption")));
+				Arrays.asList(testdataInMap.get(1).get("param1"), testdataInMap.get(1).get("param2"),
+						testdataInMap.get(1).get("param3")));
 		Assert.assertEquals(IXIGO_FlightResult.StopOptions(), Expected_Stopoptions);
 		System.out.println("*********** correct stops options displayed***************");
 		Reporter.log("*********** correct stops options displayed***************");
@@ -52,8 +55,8 @@ public class IXIGO_FlightResultTest extends BaseClass {
 	public void ValidateNumberOfDepartureOptions() {
 		Reporter.log("*********** No of departure options***************");
 		ArrayList<String> Expected_departureoptions = new ArrayList<String>(
-				Arrays.asList(Config.getProperty("First_Departureoption"), Config.getProperty("second_Departureoption"),
-						Config.getProperty("Third_Departureoption"), Config.getProperty("Fourth_Departureoption")));
+				Arrays.asList(testdataInMap.get(1).get("param4"), testdataInMap.get(1).get("param5"),
+						testdataInMap.get(1).get("param6"), testdataInMap.get(1).get("param7")));
 		Assert.assertEquals(IXIGO_FlightResult.DepartureOptions(), Expected_departureoptions);
 		System.out.println("*********** correct departure options displayed***************");
 		Reporter.log("*********** correct departure options displayed***************");
@@ -64,9 +67,10 @@ public class IXIGO_FlightResultTest extends BaseClass {
 	public void ValidateNumberOfAirlinesOptions() {
 		Reporter.log("*********** No ofAirlines options***************");
 		ArrayList<String> Expected_airlinesoptions = new ArrayList<String>(
-				Arrays.asList(Config.getProperty("First_Airlineoption"), Config.getProperty("Second_Airlineoption"),
-						Config.getProperty("Third_Airlineoption"), Config.getProperty("Fourth_Airlineoption"),
-						Config.getProperty("Fifth_Airlineoption"), Config.getProperty("Sixth_Airlineoption")));
+				Arrays.asList(testdataInMap.get(1).get("param8"), testdataInMap.get(1).get("param9"),
+						 testdataInMap.get(1).get("param11"),
+						testdataInMap.get(1).get("param12"), testdataInMap.get(1).get("param13")));
+		System.out.println("Expected Airlines options:" +Expected_airlinesoptions);
 		Assert.assertEquals(IXIGO_FlightResult.AirlinesOptions(), Expected_airlinesoptions);
 		System.out.println("*********** correct Airlines options displayed***************");
 		Reporter.log("*********** correct Airlines options displayed***************");
