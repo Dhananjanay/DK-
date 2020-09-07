@@ -87,7 +87,7 @@ public class BaseClass {
 			driver.manage().window().maximize();
 		} else if (BrowserName.equalsIgnoreCase("Firefox")) {
 
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/geckodrive.exe");
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/geckodriver.exe");
 
 			driver = new FirefoxDriver();
 			Reporter.log(BrowserName + " Opened");
